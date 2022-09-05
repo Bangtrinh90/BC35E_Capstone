@@ -267,3 +267,39 @@ small,
 .team__item:hover div.team__info {
 	bottom: 0;
 }
+/* About */
+.about__title {
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 45px;
+}
+.btn-style {
+	padding: 14px 30px;
+	font-weight: 600;
+	font-size: 16px;
+	color: #060606;
+	border-radius: 4px;
+	background: #fff;
+	border: none;
+	font-family: 'Segoe UI', sans-serif;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+.btn-style:hover {
+	background: var(--secondary-color);
+	color: #fff;
+	-webkit-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+.btn-style-secondary {
+	background: var(--secondary-color);
+	color: #fff;
+	-webkit-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+.btn-style-secondary:hover {
+	background: var(--primary-color);
+	color: #fff;
+	-webkit-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
