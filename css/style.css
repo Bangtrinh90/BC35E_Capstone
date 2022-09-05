@@ -26,34 +26,6 @@
     --logo-color: #fff;
 }
 
-/* light theme */
-:root {
-    --theme-color: #e40000;
-    --primary-color: #0d369f;
-    --primary-light: #fcf1e7;
-    --primary-dark: #ffc945;
-    --secondary-color: #ff6e65;
-    --font-color: #707070;
-    --bg-color: #fff;
-    --bg-color-2: #fff;
-    --heading-color: #060606;
-    --footer-color: #060e1f;
-    --footer-cpy-color: #040a17;
-    --border-radius: 30px;
-    --border-radius-full: 15px;
-    --border-color: transparent;
-    --border-color-light: #eee;
-    --iframe-filter: grayscale(0%);
-    --bg-grey: #f9f9f9;
-    --bg-light: #f8f9ff;
-    --bg-dark-color: #fff;
-    --quote-text-color: #1d2c4c;
-    --paceholder-color-search: #6c757d;
-    --bg-color-li: rgb(13 54 159 / 9%);
-    --box-shadow-color: rgb(4 20 69 / 10%);
-    --logo-color: #0d369f;
-}
-
 *
 {
 	margin: 0;
@@ -219,6 +191,11 @@ color: #ff6e65;
 	background-color: #161c2d;
 }
 
+.dark-mode .w3__numbers,
+.dark-mode .card-content {
+	background-color: #161c2d;
+}
+
 .dark-mode .courses-background {
 	background-color: #121725;
 	transition: all, .3s;
@@ -227,10 +204,28 @@ color: #ff6e65;
 .themeIcon i {
 	position: relative;
     transform: rotate(-20deg) scale(var(--ggs, 1));
-    width: 50px;
-    height: 50px;
 	display: block;
+	background-color: none;
 }
+
+.themeIcon button {
+	display: inline-block;
+	padding: 15px;
+	width: 10px;
+	height: 10px;
+	font-size: 30px;
+}
+
+.dark-mode .themeIcon button {
+	background-color: #161c2d;
+	color: #037ef3;
+	transition: all, .5s;
+}
+
+.dark-mode .themeIcon button:hover {
+	color: #ff6e65;
+}
+
 
 .themeIcon button {
 	border: none;
@@ -242,8 +237,46 @@ color: #ff6e65;
 .dark-mode .navbar,
 .dark-mode .banner-bottom,
 .dark-mode .welcome-area,
-.dark-mode .grids-item {
+.dark-mode .grids-item,
+.dark-mode .w3__reviewer,
+.dark-mode .w3__team,
+.dark-mode .w3__about {
 	background-color: #161c2d;
+}
+.dark-mode .reviewer__item {
+	background: #161c2d;;
+    box-shadow: hsla(222, 34%, 17%, 1);
+}
+
+.dark-mode .nav-fixed .navbar form.search-box input,
+.dark-mode .w3__numbers h3,
+.dark-mode .w3__counter row,
+.dark-mode .team__heading h3,
+.dark-mode .reviewer__info h5,
+.dark-mode .about__title,
+.dark-mode footer,
+.dark-mode .numbers__content .counter,
+.dark-mode .numbers__content p {
+	color: white;
+}
+
+.dark-mode .sub-test {
+	color: #b7b7b7;
+}
+
+.dark-mode .footer__contact,
+.dark-mode .team__item {
+	background-color: #161c2d;
+}
+
+.dark-mode .banner-bottom {
+	margin-top: -5em!important;
+	
+}
+
+.dark-mode .footer__sub,
+.dark-mode .team__bottom {
+	background-color: #060e1f;
 }
 
 .dark-mode .navbar-brand span,
@@ -253,11 +286,22 @@ color: #ff6e65;
 .dark-mode .card-info li,
 .dark-mode .card-text a,
 .dark-mode .welcome-info h3,
-.dark-mode .grids-text h5 {
+.dark-mode .grids-text h5,
+.dark-mode .team__name a,
+.dark-mode .footer__heading {
 	color: white;
 }
 
-
+.dark-mode ::placeholder {
+	color: white;
+	opacity: 1; /* Firefox */
+  }
+.dark-mode :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+  }
+.dark-mode ::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+  }
 
 /* Banner */
 .main-slider-area .container-fluid {
@@ -277,6 +321,7 @@ color: #ff6e65;
 	line-height: 80px;
 	font-weight: bold;
 	color: white;
+	right: 41%!important;
 }
 
 .carousel-caption .btn-style {
@@ -328,7 +373,7 @@ color: #ff6e65;
 
 /* Banner bottom */
 .banner-bottom {
-	position: relative;
+
 		margin-top: -5em;
   }
 
@@ -338,6 +383,7 @@ text-align: center;
 }
 
 .banner-content {
+	position: relative;
   padding: 50px 35px;
   z-index: 1;
   border-radius: 8px;
@@ -1221,4 +1267,32 @@ small,
 
 .cd-top--fade-out {
 	opacity: 0.5;
+}
+
+
+:root {
+    --theme-color: #e40000;
+    --primary-color: #0d369f;
+    --primary-light: #fcf1e7;
+    --primary-dark: #ffc945;
+    --secondary-color: #ff6e65;
+    --font-color: #707070;
+    --bg-color: #fff;
+    --bg-color-2: #fff;
+    --heading-color: #060606;
+    --footer-color: #060e1f;
+    --footer-cpy-color: #040a17;
+    --border-radius: 30px;
+    --border-radius-full: 15px;
+    --border-color: transparent;
+    --border-color-light: #eee;
+    --iframe-filter: grayscale(0%);
+    --bg-grey: #f9f9f9;
+    --bg-light: #f8f9ff;
+    --bg-dark-color: #fff;
+    --quote-text-color: #1d2c4c;
+    --paceholder-color-search: #6c757d;
+    --bg-color-li: rgb(13 54 159 / 9%);
+    --box-shadow-color: rgb(4 20 69 / 10%);
+    --logo-color: #0d369f;
 }
