@@ -209,6 +209,9 @@ color: #ff6e65;
 	color: white;
 }
 
+.dark-mode .card-image .card-content {
+	border: 1px solid #414551;
+}
 .dark-mode .welcome-images span {
 	display: inline-block;
 	color: #4867b0;
@@ -443,7 +446,7 @@ h3.title-second::after {
 
 .card-content {
 	padding: 20px;
-    border: 1px solid var(--border-color-light);
+    border: 1px solid #eee;
     border-top: none;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -562,7 +565,7 @@ h3.title-second::after {
 /* Grids */
 .grids {
 	background: url(../images/bg-grids.jpg);
-	background-position: center;
+	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
