@@ -176,3 +176,39 @@ small,
 	left: -20px;
 	bottom: -8px;
 }
+/* Reviewer */
+.reviewer__item {
+	background: var(--bg-color);
+	border-radius: 4px;
+	-webkit-box-shadow: 0 20px 62px var(--box-shadow-color);
+	box-shadow: 0 20px 62px var(--box-shadow-color);
+	padding: 2rem;
+}
+.reviewer__sub > q::before {
+	font-size: 50px;
+	color: var(--secondary-color);
+	font-family: initial;
+	line-height: 0.8;
+	padding-top: 8px;
+	display: inline-block;
+}
+.reviewer__profile {
+	display: grid;
+	grid-template-columns: 0.3fr 1fr;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	grid-gap: 5px;
+	margin-top: 1.5em;
+}
+.reviewer__avatar > img {
+	border-radius: 50%;
+}
+.reviewer__info > h5 {
+	font-weight: 600;
+	line-height: 16px;
+}
+.reviewer__info > p {
+	font-size: 13px;
+	color: var(--font-color);
+}
