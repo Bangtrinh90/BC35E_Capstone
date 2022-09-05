@@ -3,7 +3,7 @@
 	var backTop = document.getElementsByClassName('js-cd-top')[0],
 		offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
 		offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-		scrollDuration = 700,
+		scrollDuration = 70
 		scrolling = false;
 
 	if( backTop ) {
@@ -29,3 +29,22 @@
 		scrolling = false;
 	}
 })();
+
+//xác định header
+var header = document.getElementsByTagName("header")[0];
+window.onscroll = function () {
+		var offset = window.pageYOffset;
+		if (offset >= 52) {
+				header.classList.add("fixed-top");
+	}
+		else {
+		header.classList.remove("fixed-top");
+	}
+}
+
+// tạo toggle dark and light theme
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
